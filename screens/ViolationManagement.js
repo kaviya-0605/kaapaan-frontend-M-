@@ -540,7 +540,7 @@ const { width } = Dimensions.get('window');
 const CARD_WIDTH = (width - 48) / 2;
 
 const api = axios.create({
-  baseURL: 'http://192.168.42.158:5000',
+  baseURL: 'http://192.168.83.240:5000',
 });
 
 const VIOLATION_TYPES = {

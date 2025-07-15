@@ -448,7 +448,7 @@ import { Dimensions } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 
 const api = axios.create({
-  baseURL: 'http://192.168.42.158:5000',
+  baseURL: 'http://192.168.83.240:5000',
 });
 
 const screenWidth = Dimensions.get('window').width;
@@ -686,7 +686,7 @@ const Statistics = () => {
           </>
         )}
 
-        {stats?.dailyTrend && (
+        {stats?.dailyrend && (
           <>
             <Text style={styles.chartTitle}>Daily Trend</Text>
             <View style={styles.trendContainer}>

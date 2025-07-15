@@ -283,7 +283,6 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-const port = 5000;
 
 // Middleware
 app.use(cors());
@@ -511,7 +510,16 @@ app.get('/api/violations/verified', async (req, res) => {
 });
 
 
-// ✅ Start Server
-app.listen(5000, '0.0.0.0', () => {
-  console.log('✅ Server running on http://192.168.42.158:5000');
+// // ✅ Start Server
+// app.listen(5000, '0.0.0.0', () => {
+//   console.log('✅ Server running on http://192.168.83.240:5000');
+// });
+
+
+
+// All your middleware and route handlers go here
+
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`✅ Server running on port ${port}`);
 });

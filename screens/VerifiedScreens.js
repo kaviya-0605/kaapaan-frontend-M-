@@ -662,22 +662,22 @@ const CARD_WIDTH = (width - 40) / 2;
 
 const api = axios.create({
   // baseURL: 'http://192.168.42.158:5000',
-    baseURL: 'http://192.168.42.158:5000',
+    baseURL: 'http://192.168.83.240:5000',
 
 });
 
 const VIOLATION_TYPES = {
   noHelmet: { label: 'No Helmet', color: '#34D399', icon: 'motorcycle' },
-  phoneUsage: { label: 'Phone Usage', color: '#9CA3AF', icon: 'smartphone' },
+  phoneUsage: { label: 'Phone Usage', color: 'rgb(22, 135, 143)', icon: 'smartphone' },
   tripling: { label: 'Triple Riding', color: '#F87171', icon: 'people' },
   wrongway: { label: 'Wrong Way', color: '#3B82F6', icon: 'location-off' },
-  fire: { label: 'Fire', color: '#EF4444', icon: 'whatshot' },
+  fire: { label: 'Fire', color: 'rgb(206, 111, 9)', icon: 'whatshot' },
   noPlate: { label: 'No Plate', color: '#F59E0B', icon: 'confirmation-number' },
-  smoking: { label: 'Smoking', color: '#6B7280', icon: 'smoking-rooms' },
-  stuntRiding: { label: 'Stunt Riding', color: '#8B5CF6', icon: 'two-wheeler' },
-  triples: { label: 'Triples', color: '#EC4899', icon: 'groups' },
-  withHelmet: { label: 'With Helmet', color: '#10B981', icon: 'security' },
-  withoutHelmet: { label: 'Without Helmet', color: '#EF4444', icon: 'report' },
+  smoking: { label: 'Smoking', color: 'rgb(11, 98, 127)', icon: 'smoking-rooms' },
+  stuntRiding: { label: 'Stunt Riding', color: 'rgb(174, 39, 212)', icon: 'two-wheeler' },
+  triples: { label: 'Triples', color: 'rgb(214, 100, 178)', icon: 'groups' },
+  withHelmet: { label: 'With Helmet', color: 'rgb(19, 40, 158)', icon: 'security' },
+  withoutHelmet: { label: 'Without Helmet', color: '#4169E1', icon: 'report' },
 };
 
 const VerifiedScreens = ({ navigation }) => {
